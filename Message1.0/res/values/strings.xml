@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">短信群发</string>
+    <string name="action_settings">设置</string>
+    <string name="welcome">欢迎~</string>
+    <string name="new_opera">新建</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="title_activity_select_contacts">选择联系人</string>
+    <string name="search_contact">查找联系人</string>
+    <string name="select_all_contacts">全选</string>
+    <string name="cancel_all">全不选</string>
+    <string name="title_activity_template">模板</string>
+    <string name="menu_new_template">新增</string>
+    <string name="use_template">模板</string>
+    <string name="preview">预览</string>
+    <string name="dispreview">取消预览</string>
+    <string name="send">发送</string>
+    <string name="title_activity_edit_template">编辑模板</string>
+    <string name="new_template">新建模板</string>
+    <string name="hint_title">标题</string>
+    <string name="hint_content">内容&#8230;</string>
+    <string name="title_activity_add_template">新建模板</string>
+    <string name="title_content_cannot_null">标题和内容不能为空！</string>
+    <string name="contacts_cannot_be_null">请在右上角选择联系人。</string>
+    <string name="content_cannot_be_null">发送内容不能为空！</string>
+    <string name="title_activity_preview">预览</string>
+    <string name="title_activity_start">短信</string>
+    <string name="sending">正在后台发送,您可以退出等待或继续发送新的消息。</string>
+    <string name="send_success">发送成功！</string>
+    <string name="send_fail">发送失败！</string>
+
+    <!-- <string name="hello"><g id="part2">%2$s</g>TEST<g id="part1">%1$s</g></string> -->
+    <string name="send_done_notification_content">共发送%1$s条,发送成功%2$s条。</string>
+    <string name="send_done_notification_title">发送状态</string>
+    <string name="warning_title">警告</string>
+    <string name="warning_content">发送条数过多,系统可能会弹出警告窗口,点击"允许"即可</string>
+    <string name="title_activity_msg_record">已发信息</string>
+    <string name="return_up">返回</string>
+    <string name="recorn_list">已发信息</string>
+
+    <string-array name="init_templetes_title">
+        <item>春节</item>
+        <item>元宵节</item>
+        <item>端午节</item>
+        <item>国庆节</item>
+
+    </string-array>
+    <string-array name="init_templetes_content">
+        <item>春节快乐！\n</item>
+        <item>元宵节快乐！\n</item>
+        <item>端午节快乐！\n</item>
+        <item>国庆节快乐！\n</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/add_template_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:hint="@string/hint_title"
+        android:inputType="text" />
+<!--         android:labelFor="@id/add_template_title" -->
+
+    <LinearLayout
+        android:id="@+id/add_template_operate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="true"
+        android:divider="?android:attr/actionBarDivider"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="addCancel" >
+
+            <TextView
+                android:id="@+id/add_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_cancel"
+                android:gravity="center"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="addConfirm" >
+
+            <TextView
+                android:id="@+id/add_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_accept"
+                android:gravity="center"
+                android:text="@string/confirm" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/add_template_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_template_operate"
+        android:layout_below="@id/add_template_title"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="left|top"
+        android:hint="@string/hint_content"
+        android:inputType="textMultiLine" />
+<!--         android:labelFor="@id/add_template_content" -->
+
+</RelativeLayout>

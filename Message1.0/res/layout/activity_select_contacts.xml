@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    
+    <LinearLayout
+        android:id="@+id/select_operate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="true"
+        android:divider="?android:attr/actionBarDivider"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectCancel" >
+
+            <TextView
+                android:id="@+id/select_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_cancel"
+                android:gravity="center"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectConfirm" >
+
+            <TextView
+                android:id="@+id/select_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_accept"
+                android:gravity="center"
+                android:text="@string/confirm" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/select_operate" >
+
+        <TextView
+        android:id="@+id/showLetterView"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30.0dip"
+        android:background="@drawable/show_letter"
+        
+        android:visibility="invisible" />
+        
+        <ListView
+            android:id="@+id/list_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <lee.myview.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+
+</RelativeLayout>

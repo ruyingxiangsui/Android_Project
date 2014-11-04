@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/main_tool_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tool_use_template"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_action_new"
+            android:gravity="center"
+            android:onClick="template"
+            android:padding="5dp"
+            android:text="@string/use_template" />
+
+        <TextView
+            android:id="@+id/tool_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_action_send_now"
+            android:gravity="center"
+            android:onClick="send"
+            android:padding="5dp"
+            android:text="@string/send" />
+
+        <RelativeLayout
+            android:id="@+id/tool_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tool_send"
+            android:layout_toRightOf="@id/tool_use_template"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="preview" >
+
+            <TextView
+                android:id="@+id/main_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_save"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/preview" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tool_panel"
+        android:background="@drawable/edit_bg"
+        android:gravity="top|left"
+        android:inputType="textMultiLine" />
+<!--         android:labelFor="@id/msg_content" -->
+
+</RelativeLayout>

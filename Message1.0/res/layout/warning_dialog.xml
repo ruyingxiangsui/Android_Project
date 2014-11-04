@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/warning_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/warning_title"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <TextView
+        android:id="@+id/warning_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:padding="5dp"
+        android:text="@string/warning_content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+    <LinearLayout
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:baselineAligned="true"
+        android:divider="?android:attr/actionBarDivider"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/warning_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_cancel"
+                android:gravity="center"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_panel"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/warning_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_accept"
+                android:gravity="center"
+                android:text="@string/confirm" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

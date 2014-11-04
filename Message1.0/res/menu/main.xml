@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/menu_record_list"
+        android:icon="@drawable/ic_action_view_as_list"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/recorn_list"/>
+    
+    <item
+        android:id="@+id/menu_new"
+        android:icon="@drawable/ic_action_group"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/title_activity_select_contacts"/>
+
+</menu>
